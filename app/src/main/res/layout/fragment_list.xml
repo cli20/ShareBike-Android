@@ -1,0 +1,20 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.esprit.bikeit.ListFragment"
+
+    >
+
+
+    <ListView
+        android:id="@+id/listT"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:divider="#FF9900"
+        android:background="@drawable/rounded_blue"
+        android:dividerHeight="5px">
+    </ListView>
+
+
+</FrameLayout>

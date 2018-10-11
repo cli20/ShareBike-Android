@@ -1,0 +1,171 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.esprit.bikeit.RentFragment"
+    android:background="@drawable/rounded_blue"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:id="@+id/ic_pay1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/circle4"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="2dp"
+            android:src="@drawable/bike2"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/ic_pay2"
+        android:layout_below="@id/ic_pay1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:layout_marginLeft="150dp"
+        android:text="Bike rent"
+        android:textColor="#000"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp" />
+
+    <View
+        android:id="@+id/ic_pay"
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_height="0.7dp"
+        android:background="#b1b1b1"
+        android:layout_below="@id/ic_pay2"/>
+
+    <TextView
+        android:id="@+id/tvSt45"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/tvSt55"
+        android:text=" From: " />
+    <TextView
+
+        android:id="@+id/tvSt1"
+        android:layout_below="@id/ic_pay"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_alignBaseline="@+id/tvSt55"
+        android:layout_alignBottom="@+id/tvSt55"
+        android:layout_toRightOf="@+id/tvSt45"
+        android:layout_toEndOf="@+id/tvSt45" />
+
+    <TextView
+        android:id="@+id/tvSt55"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:text=" To: "
+        android:layout_alignBaseline="@+id/tvSt2"
+        android:layout_alignBottom="@+id/tvSt2"
+        android:layout_toRightOf="@+id/tvRentHours"
+        android:layout_toEndOf="@+id/tvRentHours" />
+
+    <TextView
+
+        android:id="@+id/tvSt2"
+        android:layout_below="@id/ic_pay"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="200dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <TextView
+        android:id="@+id/tvnnn"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvvvvv"
+        android:layout_marginTop="13dp"
+        android:text="Rent hours :" />
+
+    <TextView
+        android:id="@+id/tvvvvv"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvSt45"
+        android:layout_marginTop="8dp"
+        android:text="Free hours :" />
+
+    <TextView
+        android:id="@+id/tvF"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+
+        android:text="0 H"
+        android:layout_alignBaseline="@+id/tvvvvv"
+        android:layout_alignBottom="@+id/tvvvvv"
+        android:layout_alignLeft="@+id/tvRentHours"
+        android:layout_alignStart="@+id/tvRentHours" />
+
+    <TextView
+        android:id="@+id/tvRentHours"
+
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/tvnnn"
+        android:layout_alignBottom="@+id/tvnnn"
+        android:layout_toRightOf="@+id/tvnnn"
+        android:layout_toEndOf="@+id/tvnnn"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:background="#b1b1b1"
+        android:layout_below="@id/tvRentHours"/>
+
+    <TextView
+        android:id="@+id/tvPrix"
+
+        android:layout_weight="1"
+        android:textColor="#000"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvRentHours"
+        android:layout_marginTop="19dp"
+        android:textSize="30dp"
+        android:text="Total : "
+
+        android:layout_alignRight="@+id/tvSt55"
+        android:layout_alignEnd="@+id/tvSt55" />
+
+
+    <Button
+        android:id="@+id/btn_payment"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:text="PAY"
+        android:enabled="false"
+        android:layout_alignTop="@+id/tvPrix"
+        android:layout_alignLeft="@+id/tvSt2"
+        android:layout_alignStart="@+id/tvSt2" />
+
+</RelativeLayout>
